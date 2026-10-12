@@ -1,0 +1,11 @@
+# Environment variables and secrets
+.env
+.env.*
+
+# macOS files
+__MACOSX/
+.DS_Store
+
+# Windows files
+Thumbs.db
+desktop.ini

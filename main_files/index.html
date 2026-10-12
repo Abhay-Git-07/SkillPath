@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- =========================================================
+       BASIC PAGE SETUP
+       ========================================================= -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1220" />
+
+  <title>SkillPath — Your next skill, made clear</title>
+
+  <!-- =========================================================
+       GOOGLE FONTS
+       ========================================================= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- =========================================================
+       MAIN STYLESHEET
+       ========================================================= -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- =========================================================
+       BACKGROUND
+       ========================================================= -->
+  <div class="app-bg"></div>
+
+
+  <!-- =========================================================
+       HEADER / NAVIGATION
+       ========================================================= -->
+  <header class="site-header">
+
+    <!-- Brand -->
+    <a
+      class="brand"
+      href="#home"
+      aria-label="SkillPath home"
+    >
+      <span class="brand-mark">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+
+      <span>
+        Skill<span class="brand-accent">Path</span>
+      </span>
+    </a>
+
+    <!-- Header actions -->
+    <div class="header-actions">
+
+      <button
+        class="text-button"
+        id="reset-button"
+        type="button"
+      >
+        Start over
+      </button>
+
+      <span class="header-pill">
+        <span class="status-dot"></span>
+        Your learning, your pace
+      </span>
+
+    </div>
+  </header>
+
+
+  <!-- =========================================================
+       MAIN APPLICATION
+       ========================================================= -->
+  <main>
+
+
+    <!-- =======================================================
+         1. LANDING PAGE
+         ======================================================= -->
+    <section
+      class="view landing-view active"
+      id="home-view"
+      aria-labelledby="hero-title"
+    >
+
+      <!-- Hero -->
+      <div class="hero-grid">
+
+        <div class="hero-copy">
+
+          <div class="eyebrow">
+            <span class="eyebrow-line"></span>
+            Personal career intelligence
+          </div>
+
+          <h1 id="hero-title">
+            Make your next move <em>make sense.</em>
+          </h1>
+
+          <p class="hero-lede">
+            Know where you are. Know where you want to go.
+            Get a learning path built around the skills you have,
+            the time you have, and the future you want.
+          </p>
+
+          <!-- Social proof -->
+          <div class="hero-proof">
+
+            <div
+              class="avatar-stack"
+              aria-hidden="true"
+            >
+              <span>AK</span>
+              <span>RM</span>
+              <span>PS</span>
+              <span>+</span>
+            </div>
+
+            <span>
+              Built for curious students finding their edge
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <!-- Hero visual -->
+        <div
+          class="hero-visual"
+          aria-label="Illustration of a personalized learning path"
+        >
+
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+
+          <div class="visual-star star-one">✦</div>
+          <div class="visual-star star-two">✦</div>
+
+
+          <!-- Main path card -->
+          <div class="path-card path-card-main">
+
+            <div class="path-card-top">
+              <span class="mini-label">YOUR NEXT STEP</span>
+              <span class="mini-icon">↗</span>
+            </div>
+
+            <strong>Build with Python</strong>
+
+            <div class="path-track">
+              <span class="track-fill"></span>
+            </div>
+
+            <div class="path-meta">
+              <span>Module 03</span>
+              <span>4 hrs</span>
+            </div>
+
+          </div>
+
+
+          <!-- Career match -->
+          <div class="float-chip chip-career">
+
+            <span class="chip-icon green">⌁</span>
+
+            <span>
+              <small>Career match</small>
+              <b>Data Analyst</b>
+            </span>
+
+            <strong>85%</strong>
+
+          </div>
+
+
+          <!-- Skill -->
+          <div class="float-chip chip-skill">
+
+            <span class="chip-icon purple">✓</span>
+
+            <span>
+              <small>Skill mastered</small>
+              <b>Problem solving</b>
+            </span>
+
+          </div>
+
+
+          <!-- Goal -->
+          <div class="float-chip chip-goal">
+
+            <span class="chip-icon orange">↗</span>
+
+            <span>
+              <small>Next milestone</small>
+              <b>Portfolio project</b>
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- =====================================================
+           CAREER MODE SELECTION
+           ===================================================== -->
+      <div class="choice-section">
+
+        <div class="section-heading">
+
+          <span class="section-kicker">
+            START HERE
+          </span>
+
+          <h2>
+            Which path sounds like you?
+          </h2>
+
+          <p>
+            There is no wrong starting point.
+            Just a better next step.
+          </p>
+
+        </div>
+
+
+        <div class="mode-grid">
+
+          <!-- Known career -->
+          <button
+            class="mode-card mode-card-dark"
+            data-mode="known"
+            type="button"
+          >
+
+            <span class="mode-number">01</span>
+            <span class="mode-arrow">↗</span>
+
+            <span class="mode-icon">◎</span>
+
+            <h3>
+              I know my career goal
+            </h3>
+
+            <p>
+              You have a destination in mind.
+              We’ll map the skills and projects
+              that get you there.
+            </p>
+
+            <span class="mode-link">
+              Build my roadmap
+              <span>→</span>
+            </span>
+
+          </button>
+
+
+          <!-- Exploring -->
+          <button
+            class="mode-card mode-card-light"
+            data-mode="confused"
+            type="button"
+          >
+
+            <span class="mode-number">02</span>
+            <span class="mode-arrow">↗</span>
+
+            <span class="mode-icon">✦</span>
+
+            <h3>
+              I’m exploring my options
+            </h3>
+
+            <p>
+              You have interests, not a job title.
+              We’ll help you discover a direction
+              that fits.
+            </p>
+
+            <span class="mode-link">
+              Take the 2-min assessment
+              <span>→</span>
+            </span>
+
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- Landing footer -->
+      <div class="landing-footer">
+
+        <span>Simple inputs</span>
+        <i></i>
+
+        <span>Smart recommendations</span>
+        <i></i>
+
+        <span>Real projects</span>
+        <i></i>
+
+        <span>Your momentum</span>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         2. PROFILE / ASSESSMENT FLOW
+         ======================================================= -->
+    <section
+      class="view flow-view"
+      id="flow-view"
+      aria-live="polite"
+    >
+
+      <div class="flow-shell">
+
+        <!-- Flow header -->
+        <div class="flow-top">
+
+          <button
+            class="back-button"
+            id="flow-back"
+            type="button"
+          >
+            ←
+            <span>Back</span>
+          </button>
+
+
+          <!-- Progress -->
+          <div class="flow-progress">
+
+            <span id="flow-progress-label">
+              STEP 1 OF 2
+            </span>
+
+            <div>
+              <span id="flow-progress-bar"></span>
+            </div>
+
+          </div>
+
+
+          <span
+            class="flow-mode-label"
+            id="flow-mode-label"
+          >
+            Career roadmap
+          </span>
+
+        </div>
+
+
+        <!-- JavaScript inserts forms/questions here -->
+        <div id="flow-content"></div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         3. DASHBOARD
+         ======================================================= -->
+    <section
+      class="view dashboard-view"
+      id="dashboard-view"
+      aria-label="Your SkillPath dashboard"
+    >
+
+      <div class="dashboard-layout">
+
+
+        <!-- ===================================================
+             DASHBOARD SIDEBAR
+             =================================================== -->
+        <aside class="dashboard-sidebar">
+
+          <div class="sidebar-intro">
+
+            <span class="sidebar-kicker">
+              YOUR SKILLPATH
+            </span>
+
+            <h2 id="sidebar-career">
+              Data Analyst
+            </h2>
+
+            <span
+              class="match-badge"
+              id="sidebar-match"
+            >
+              85% match
+            </span>
+
+          </div>
+
+
+          <!-- Dashboard navigation -->
+          <nav
+            class="dashboard-nav"
+            aria-label="Dashboard sections"
+          >
+
+            <button
+              class="dash-nav-item active"
+              data-dashboard-view="overview"
+              type="button"
+            >
+              <span>◒</span>
+              Overview
+            </button>
+
+            <button
+              class="dash-nav-item"
+              data-dashboard-view="roadmap"
+              type="button"
+            >
+              <span>↘</span>
+              My roadmap
+            </button>
+
+            <button
+              class="dash-nav-item"
+              data-dashboard-view="resources"
+              type="button"
+            >
+              <span>▣</span>
+              Resources
+            </button>
+
+            <button
+              class="dash-nav-item"
+              data-dashboard-view="progress"
+              type="button"
+            >
+              <span>◔</span>
+              Progress
+            </button>
+
+          </nav>
+
+
+          <!-- Sidebar bottom -->
+          <div class="sidebar-bottom">
+
+            <div class="focus-card">
+
+              <span class="focus-spark">
+                ✦
+              </span>
+
+              <b>
+                Small steps,<br />
+                big shifts.
+              </b>
+
+              <p>
+                Consistency beats intensity.
+              </p>
+
+            </div>
+
+
+            <button
+              class="sidebar-home"
+              id="dashboard-home"
+              type="button"
+            >
+              ← Back to home
+            </button>
+
+          </div>
+
+        </aside>
+
+
+        <!-- ===================================================
+             DASHBOARD MAIN CONTENT
+             =================================================== -->
+        <div class="dashboard-main">
+
+
+          <!-- Mobile dashboard header -->
+          <div class="dashboard-mobile-top">
+
+            <button
+              class="back-button"
+              id="mobile-dashboard-home"
+              type="button"
+            >
+              ← Home
+            </button>
+
+            <span class="flow-mode-label">
+              MY DASHBOARD
+            </span>
+
+          </div>
+
+
+          <!-- JavaScript renders dashboard content here -->
+          <div id="dashboard-content"></div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================================================
+       TOAST / NOTIFICATION
+       ========================================================= -->
+  <div
+    class="toast"
+    id="toast"
+    role="status"
+  ></div>
+
+
+  <!-- =========================================================
+       APPLICATION JAVASCRIPT
+       ========================================================= -->
+  <script
+    type="module"
+    src="script.js"
+  ></script>
+
+</body>
+
+</html>
